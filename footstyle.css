@@ -1,0 +1,169 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.footer-container{
+    max-width: 1170px;
+    background-color: lawngreen;
+    margin: auto;
+}
+.footer-row{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer{
+    width: 100%;
+    background-color: #2B5D7D;
+    /* position: absolute;
+    bottom: 0; */
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-col{
+    flex-basis: 25%;  
+    padding: 10px;
+}
+
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 25%;
+   
+}
+
+.footer-logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+.footer-col .footer-h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 20px;
+
+}
+.footer p{
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+form{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+}
+form button{
+    background-color: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.social-links .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background-color: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 20px auto ;
+}
+.copyright{
+    text-align: center;
+}
+.ticker-container {
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    background-color:  #8dd4f8;
+    color: black;
+    padding: 10px 0;
+  }
+  .ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker-scroll 20s linear infinite;
+    width: 100%;
+    
+
+  }
+  @keyframes ticker-scroll {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+
+  }
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;  
+    }
+    
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+       
+    }
+}
