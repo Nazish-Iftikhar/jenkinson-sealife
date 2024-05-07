@@ -1,0 +1,193 @@
+.logo-section img{
+    height: 60px;
+    width: 60px;
+    /* border-radius: 50% ;
+    filter: invert(100%); */
+ }
+ .ul-section{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 44%;
+ }
+ .ul-section .li-section{
+    list-style-type: none;
+ }
+ .ul-section .li-section .href-tag{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+ }
+ .ul-section .li-section:not(:last-child) .href-tag:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: #4ca8e1;
+    text-decoration-color: #fff;
+ }
+ #contact-btn{
+    font-weight: 700;
+    padding: 2px 4px 4px 4px;
+    border: none;
+    background: #4ca8e1;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+ }
+ #contact-btn:hover{
+    background-color: #0091ff;
+ }
+
+ .header-section .navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #2B5D7D;
+ }
+.haamburger-btn{
+    font-size: 30px;
+    display: none;
+    order: -1; /* This will move the button to the beginning */
+    align-self: flex-start; /* Aligns the button to the top */
+}
+    
+@media screen and (max-width:1024px){
+    .haamburger-btn{
+        display: flex;
+        cursor: pointer;
+     order: -1;
+    }
+    .ul-section{
+        display: none;
+   flex-direction: column;
+    }
+    .ul-section.ham-active{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    /* CSS for the toggle button */
+.haamburger-btn {
+    font-size: 30px;
+    cursor: pointer;
+    order: -1; /* Moves the button to the beginning */
+    align-self: flex-start; /* Aligns the button to the top */
+}
+/* .carousel{
+    display: none;
+} */
+
+/* CSS for the navigation menu */
+.ul-section {
+    display: none; /* Initially hide the menu */
+    position: fixed; /* Position the menu overlay */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the menu cover the entire screen */
+    height: 100%;
+    background-color: #2B5D7D; /* Semi-transparent background */
+    z-index: 999; /* Ensure the menu is above other content */
+    flex-direction: column; /* Display list items in a column layout */
+    align-items: center; /* Center list items horizontally */
+    justify-content: center; /* Center list items vertically */
+}
+
+.header-section .navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #2B5D7D;
+    position: relative; /* Make the navbar position relative */
+}
+
+/* Adjust z-index of toggle button to make sure it's above the menu overlay */
+.haamburger-btn {
+    z-index: 1000;
+}
+
+/* Display the menu when the ham-active class is added */
+.ul-section.ham-active {
+    display: flex;
+}
+
+.ul-section .li-section {
+    list-style-type: none;
+    margin-bottom: 20px; /* Add space between list items */
+}
+
+.ul-section .li-section .href-tag {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.ul-section .li-section:not(:last-child) .href-tag:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: blue;
+    text-decoration-color: #fff;
+}
+
+}
+
+/* MAIN CONTENT */
+/* Container holding the image and the text */
+.vid-container {
+    position: relative;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    
+  }
+
+  /* Centered text */
+.center-text {
+    font-size: 38px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p{
+    font-size: 15px;
+  }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column-creature {
+    float: left;
+    width: 30.33%;
+    padding: 5px;
+    height: fit-content;
+  }
+  
+  /* Clear floats after image containers */
+  .row-creature::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row-creature{
+    margin-left: 10%;
+    margin-right: 2%;
+    padding: 12px;
+  }
+
+
+
+
+
+h1{
+    display: block;
+    text-align: center;
+    background-color: rgb(5, 5, 105);
+    color: white;
+}
+video{
+    width: 100%;
+}
+
+
