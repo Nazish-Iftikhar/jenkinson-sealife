@@ -1,0 +1,566 @@
+
+
+/*navbar css*/
+
+.logo-section img{
+    height: 60px;
+    width: 60px;
+    /* border-radius: 50% ;
+    filter: invert(100%); */
+ }
+ .ul-section{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 44%;
+ }
+ .ul-section .li-section{
+    list-style-type: none;
+ }
+ .ul-section .li-section .href-tag{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+ }
+ .ul-section .li-section:not(:last-child) .href-tag:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: blue;
+    text-decoration-color: #fff;
+ }
+ #contact-btn{
+    font-weight: 700;
+    padding: 2px 4px 4px 4px;
+    border: none;
+    background: #4ca8e1;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+ }
+ #contact-btn:hover{
+    background-color: #0091ff;
+ }
+
+ .header-section .navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #2B5D7D;
+ }
+.haamburger-btn{
+    font-size: 30px;
+    display: none;
+    order: -1; /* This will move the button to the beginning */
+    align-self: flex-start; /* Aligns the button to the top */
+}
+
+@media screen and (max-width:1024px){
+    .haamburger-btn{
+        display: flex;
+        cursor: pointer;
+     order: -1;
+    }
+    .ul-section{
+        display: none;
+   flex-direction: column;
+    }
+    .ul-section.ham-active{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    /* CSS for the toggle button */
+.haamburger-btn {
+    font-size: 30px;
+    cursor: pointer;
+    order: -1; /* Moves the button to the beginning */
+    align-self: flex-start; /* Aligns the button to the top */
+}
+
+/* CSS for the navigation menu */
+.ul-section {
+    display: none; /* Initially hide the menu */
+    position: fixed; /* Position the menu overlay */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the menu cover the entire screen */
+    height: 100%;
+    background-color: #2B5D7D; /* Semi-transparent background */
+    z-index: 999; /* Ensure the menu is above other content */
+    flex-direction: column; /* Display list items in a column layout */
+    align-items: center; /* Center list items horizontally */
+    justify-content: center; /* Center list items vertically */
+}
+
+.header-section .navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #2B5D7D;
+    position: relative; /* Make the navbar position relative */
+}
+
+/* Adjust z-index of toggle button to make sure it's above the menu overlay */
+.haamburger-btn {
+    z-index: 1000;
+}
+
+/* Display the menu when the ham-active class is added */
+.ul-section.ham-active {
+    display: flex;
+}
+
+.ul-section .li-section {
+    list-style-type: none;
+    margin-bottom: 20px; /* Add space between list items */
+}
+
+.ul-section .li-section .href-tag {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.ul-section .li-section:not(:last-child) .href-tag:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: blue;
+    text-decoration-color: #fff;
+}
+
+}
+
+/*css about us*/
+
+body{
+    background: rgb(198, 218, 226);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+.hero img{
+    width: 1500px;
+    height: 00px;
+
+
+
+}*/
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: right;
+    width: 55%;
+}
+
+.image-section{
+    float: left;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.content-section .title h1{
+    font-size: 40px;
+    color: rgb(60, 151, 226);
+}
+
+.content-section .content p{
+    color: rgb(70, 83, 107);
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    text-shadow: silver;
+}
+
+.content-section .content .button a{
+    background-color: azure;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: rgb(9, 10, 85);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    
+}
+.content-section .content .button{
+    margin-top: 30px;
+
+}
+
+.content-section .content .button a:hover{
+    background-color: rgb(43, 201, 201);
+    color: skyblue;
+}
+h4{
+    text-align: center;
+    color: rgb(24, 98, 158);
+    margin-bottom: 100px;
+    margin-left: 0%;
+    margin-top: 0px;
+   
+}
+.contact{
+    background: rgb(144, 185, 212);
+    color: rgba(5, 26, 53, 0.623);
+    
+    
+    
+    
+}
+
+.col-md-6{
+    width: 40%;
+    margin-left: 20px;
+
+    
+}
+
+.col-12{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.col-md-4{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.col-md-2{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(family-events1.jpg);
+    background-size: cover;
+}
+.contact .content{
+max-width: 800px;
+text-align: center;
+}
+
+.contact .content h2{
+font-size: 40px;
+font-weight: 500;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.contact .content p{
+font-weight: 350;
+color: rgb(235, 226, 226);
+}
+.information{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+
+.information .contactInfo{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.information .contactInfo .box{
+position: relative;
+padding: 30px 0;
+display: flex;
+}
+
+.information .contactInfo .box .icons{
+
+min-width: 60px;
+height: 60px;
+background: #d8b1b1;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+}
+
+.information .contactInfo .box .text{
+
+display: flex;
+margin-left: 20px;
+font-size: 20px;
+color: #dfdfe2;
+flex-direction: column;
+font-weight: 300;
+}
+
+.information .contactInfo .box .text h3{
+
+font-weight: 500;
+color: rgb(243, 236, 236);
+}
+
+.contactForm{
+ width: 40%;
+ padding: 40px;
+ background: #fff;
+}
+
+.contactForm h2{
+font-size: 30px;
+color: #333;
+font-weight: 500;
+}
+
+
+/*media quries*/
+
+@media screen  and (max-width:768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 100px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content .button{
+        
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .content-section .content .button a{
+        padding: 9px 30px;
+    }
+    
+}
+
+
+
+
+@media (max-width:991px) {
+    .contact{
+        padding: 50px;
+    }
+    .information{
+        flex-direction: column;
+    }
+
+    .information .contactInfo{
+        margin-bottom: 40px;
+    }
+}
+
+.footer-container{
+    max-width: 1170px;
+    background-color: lawngreen;
+    margin: auto;
+}
+.footer-row{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer{
+    width: 100%;
+    background-color:  #d7f2ff;
+    /* position: absolute;
+    bottom: 0; */
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-col{
+    flex-basis: 25%;  
+    padding: 10px;
+}
+
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 25%;
+   
+}
+
+.footer-logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+.footer-col .footer-h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 20px;
+
+}
+.footer p{
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+form{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+}
+form button{
+    background-color: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.social-links .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background-color: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 20px auto ;
+}
+.copyright{
+    text-align: center;
+}
+.ticker-container {
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 131);
+    color: #fff;
+    padding: 10px 0;
+  }
+  .ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker-scroll 20s linear infinite;
+    width: 100%;
+    
+
+  }
+  @keyframes ticker-scroll {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+
+  }
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;  
+    }
+    
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+       
+    }
+}
+
