@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/explore.css">
+</head>
+<style>
+    .cart-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping */
+   
+  }
+  
+  .cart {
+    display: flex; /* Use flexbox to lay out items */
+    padding: 10px;
+  }
+  
+  .item {
+    flex: 0 0 auto; /* Prevent items from growing or shrinking */
+    width: fit-content; /* Set the width of each item */
+    height: fit-content; /* Set the height of each item */
+    /* background-color: #ddd; */
+    margin-right: 10px; /* Add spacing between items */
+  }
+  span{
+    font-size: 20px;
+  }
+  .cart-container{
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+</style>
+<body>
+    <header class="header-section">
+        <nav class="navbar-section">
+          <div class="logo-section">
+            <img src="img/final logo1.png" alt="">
+          </div>
+    
+          <ul class="ul-section">
+            <li class="li-section"><a href="#" class="href-tag">home</a></li>
+            <li class="li-section"><a href="#" class="href-tag">aboutus</a></li>
+            <li class="li-section"><a href="#" class="href-tag">explore</a></li>
+            <li class="li-section"><a href="#" class="href-tag">events</a></li>
+            <li class="li-section"><a href="/index.html" class="href-tag">gallery</a></li>
+            <li class="li-section"><a href="/contact.html" class="href-tag" id="contact-btn">contact us</a></li>
+          </ul>
+    
+          <div class="haamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+      <br><br><br><br><br><br>
+<hr>
+<div class="cart-container">
+      <h1>Shopping Cart</h1>
+      <div id="items">
+        <div class="item">
+          <span>Product penguin-Zuko</span>
+          <br>
+          <span> price:$90.00</span>
+          <input type="number" min="1" value="1" id="item1Quantity">
+          <button onclick="addToCart('Item 1', 10, 'item1Quantity')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+      <h2>Cart</h2>
+  <div id="cart"></div>
+<script src="/aquarium.js"></script>
+
+</body>
+</html>
