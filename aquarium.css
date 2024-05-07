@@ -1,0 +1,47 @@
+.container1{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.item {
+    margin-bottom: 10px;
+  }
+  
+  .item input {
+    width: 50px;
+    margin-right: 10px;
+  }
+/* SCROLL BAR CSS */
+.cart-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping */
+  }
+  
+  .cart {
+    display: flex; /* Use flexbox to lay out items */
+    padding: 10px;
+  }
+  
+  .item {
+    flex: 0 0 auto; /* Prevent items from growing or shrinking */
+    width: fit-content; /* Set the width of each item */
+    height: fit-content; /* Set the height of each item */
+    /* background-color: #ddd; */
+    margin-right: 10px; /* Add spacing between items */
+  }
+
+  /* cart */
+  .btn-adopt{
+    background-color: rgb(38, 38, 236);
+    text-align: center;
+    justify-content: center;
+    margin-left: 15%;
+    width: fit-content;
+    height: 50px;
+    border-radius: 2%;
+  }
+.btn-adopt :hover{
+    cursor: pointer;
+    color: white;
+}
