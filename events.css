@@ -1,0 +1,569 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+
+
+/*navbar css*/
+.logo-section img{
+    height: 60px;
+    width: 100px;
+    border-radius: 50% 
+    filter: invert(100%); 
+ }
+ .ul-section{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 44%;
+ }
+ .ul-section .li-section{
+    list-style-type: none;
+ }
+ .ul-section .li-section .href-tag{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+ }
+ .ul-section .li-section:not(:last-child) .href-tag:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: blue;
+    text-decoration-color: #fff;
+ }
+ #contact-btn{
+    font-weight: 700;
+    padding: 2px 4px 4px 4px;
+    border: none;
+    background: #4ca8e1;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+ }
+ #contact-btn:hover{
+    background-color: #0091ff;
+ }
+
+ .header-section .navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    /* background-color:; */
+ }
+
+ :root{
+   background-color:#74b8ec;
+
+ }
+
+.haamburger-btn{
+    font-size: 30px;
+    display: none;
+    order: -1; /* This will move the button to the beginning */
+    align-self: flex-start; /* Aligns the button to the top */
+}
+
+@media screen and (max-width:1024px){
+    .haamburger-btn{
+        display: flex;
+        cursor: pointer;
+     order: -1;
+    }
+    .ul-section{
+        display: none;
+   flex-direction: column;
+    }
+    .ul-section.ham-active{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    /* CSS for the toggle button */
+.haamburger-btn {
+    font-size: 30px;
+    cursor: pointer;
+    order: -1; /* Moves the button to the beginning */
+    align-self: flex-start; /* Aligns the button to the top */
+}
+/* CSS for the navigation menu */
+.ul-section {
+    display: none; /* Initially hide the menu */
+    position: fixed; /* Position the menu overlay */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the menu cover the entire screen */
+    height: 100%;
+    background-color: #798dbe ;/* Semi-transparent background */
+    z-index: 999; /* Ensure the menu is above other content */
+    flex-direction: column; /* Display list items in a column layout */
+    align-items: center; /* Center list items horizontally */
+    justify-content: center; /* Center list items vertically */
+}
+
+.header-section .navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color:#2B5D7D
+    position: relative; /* Make the navbar position relative */
+}
+
+/* Adjust z-index of toggle button to make sure it's above the menu overlay */
+.haamburger-btn {
+    z-index: 1000;
+}
+
+/* Display the menu when the ham-active class is added */
+.ul-section.ham-active {
+    display: flex;
+}
+
+.ul-section .li-section {
+    list-style-type: none;
+    margin-bottom: 20px; /* Add space between list items */
+}
+
+.ul-section .li-section .href-tag {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.ul-section .li-section:not(:last-child) .href-tag:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: blue;
+    text-decoration-color: #fff;
+}
+
+}
+
+
+
+
+/*navabr css end*/
+
+
+:root{
+    --skyblue:#798dbe;}
+body{
+    height: 200rem;
+    background: var(--skyblue);
+}
+*{
+    font-family: 'nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+ 
+/*home  section css*/
+
+.section{
+    padding: 2rem 9%;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: rgb(2, 93, 129);
+    text-shadow: 0 .3rem .5rem palevioletred;
+}
+
+.home .content p{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: rgb(236, 187, 25);
+    text-shadow: 0 .3rem .5rem palevioletred;
+}
+
+.home .video-container video{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+
+}
+
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgb(157, 223, 250);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #14679e;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.home .controls .vid-btn.active{
+   background: var(--orange);
+}
+.btn{
+    color: rgb(240, 245, 168);
+    font-size: 30px;
+    text-shadow: rgb(70, 144, 173);
+}
+
+
+/*book css*/
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background: rgb(188, 226, 241);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    color: rgb(5, 57, 124);
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.heading span.space{
+    background: none;
+}
+
+/*upcoming css events*/ 
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+    background: var(--skyblue);
+}
+
+.card{
+    width: 500px;
+    background-color:rgba(24, 54, 138, 0.267) ;
+    box-shadow: 0px 2px 4px rgb(26, 135, 179);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+.card-content p{
+    font-size: 15px;
+    color: rgb(9, 66, 88);
+    margin-bottom: 20px;
+}
+
+.card-button{
+    display: inline-block;
+    background-color: rgb(39, 122, 216);
+    color: rgb(155, 187, 236);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 30px;
+}
+
+h1{
+    color: rgb(238, 243, 245);
+    margin-left: 40px;
+    text-align: center
+    
+}
+
+
+
+
+
+/*media quries*/
+
+@media (max-width:1200px){
+      
+    html{
+        font-size: 55%
+        
+    }
+}
+
+@media (max-width:991px){
+
+    header{
+        padding: 2rem;
+        
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-bar{
+     display: initial;
+
+     header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        border-top: .1rem solid rgb(243, 235, 235);
+        padding: 1rem 2rem;
+        
+     }
+
+     header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: rgb(193, 207, 238)b9b;
+     }
+        
+    }
+}
+
+@media (max-width:1000px){
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:450px{
+
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+})
+
+@media (max-width:450px){
+      
+    html{
+        font-size: 50%
+        
+    }
+}
+
+/*footer css*/
+
+.footer-container{
+    max-width: 1170px;
+    background-color: lawngreen;
+    margin: auto;
+}
+.footer-row{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer{
+    width: 100%;
+    background-color:  #d7f2ff;
+    /* position: absolute;
+    bottom: 0; */
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-col{
+    flex-basis: 25%;  
+    padding: 10px;
+}
+
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 25%;
+   
+}
+
+.footer-logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+.footer-col .footer-h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 20px;
+
+}
+.footer p{
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+form{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+}
+form button{
+    background-color: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.social-links .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background-color: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 20px auto ;
+}
+.copyright{
+    text-align: center;
+}
+.ticker-container {
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 131);
+    color: #fff;
+    padding: 10px 0;
+  }
+  .ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker-scroll 20s linear infinite;
+    width: 100%;
+    
+
+  }
+  @keyframes ticker-scroll {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+
+  }
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;  
+    }
+    
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+       
+    }
+}
+
